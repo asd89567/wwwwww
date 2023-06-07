@@ -1,0 +1,15 @@
+﻿@{
+    var StudentId = "411004265";
+    var Name = "紀柏宇";
+    string[] fruits = { "蘋果", "香蕉", "荔枝", "鳳梨", "西瓜" };
+}
+<h2>姓名：@Name</h2>
+<h2>學號：@StudentId</h2>
+
+<h2>喜歡的水果:</h2>
+<ol>
+    @foreach (var fruit in fruits)
+    {
+        <li>@fruit</li>
+    }
+</ol>
